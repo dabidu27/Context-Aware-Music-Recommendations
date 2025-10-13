@@ -87,3 +87,29 @@ plt.tight_layout()
 
 plt.savefig('../plots/subgenres_barchart', dpi = 300)
 #plt.show()
+
+
+#CORRELATION ANALYSIS
+
+correlation_matrix = df[numeric_cols].corr()
+print(correlation_matrix)
+
+plt.figure(figsize=(12, 8))
+sns.heatmap(correlation_matrix, annot = True)
+
+plt.suptitle('Correlation Matrix of Audio Features')
+plt.tight_layout()
+
+plt.savefig('../plots/correlation_matrix', dpi = 300)
+#plt.show()
+
+#strong correlation
+
+for i in range(len(correlation_matrix.columns)):
+    for j in range(i+1, len(correlation_matrix.columns)):
+
+        if(abs(correlation_matrix.iloc[i, j]) > 0.5):
+            print(f'Strong correlation: {correlation_matrix.columns[i]} - {correlation_matrix.columns[j]}: {correlation_matrix.iloc[i, j]: .3f}')
+
+
+
