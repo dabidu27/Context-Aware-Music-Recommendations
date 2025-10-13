@@ -28,6 +28,8 @@ plt.tight_layout(pad = 2)
 plt.savefig('../plots/audio_features_dist', dpi = 300)
 #plt.show()
 
+print(df['instrumentalness'].sort_values(ascending=False))
+
 #boxplots
 
 fig, axes = plt.subplots(3, 3, figsize=(12, 8))
@@ -84,5 +86,4 @@ plt.xticks(rotation = 90)
 plt.tight_layout()
 
 plt.savefig('../plots/subgenres_barchart', dpi = 300)
-plt.show()
-
+#plt.show()
