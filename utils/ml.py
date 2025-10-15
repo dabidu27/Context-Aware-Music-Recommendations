@@ -3,8 +3,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler, Normalizer
-from sklearn.cluster import KMeans, DBSCAN
+from sklearn.cluster import KMeans, DBSCAN, AgglomerativeClustering, SpectralClustering
 from sklearn.metrics import silhouette_score
+from sklearn.neighbors import NearestNeighbors
 
 
 df = pd.read_csv('../data/spotify_clean.csv')
@@ -244,7 +245,8 @@ def remove_outliers(X, df):
 
 def kmeans6():
 
-    features = ['danceability', 'energy', 'valence', 'mode', 'tempo', 'speechiness', 'instrumentalness'] #dropped features with strong correlations
+    features = ['danceability', 'energy', 'valence', 'mode', 'tempo', 'speechiness', 'instrumentalness']#dropped features with strong correlations
+    print(df.head()) 
     X = df[features]
 
     X_clean, df_clean = remove_outliers(X, df)
@@ -260,7 +262,101 @@ def kmeans6():
     kmeans.fit(X_reduced)
     labels = kmeans.predict(X_reduced)
     score = silhouette_score(X_reduced, labels)
-    print(score)
-
-kmeans6() #silhouette score improvement after outlier removal
+    print(f"Silhouette score: {score}")
     
+    print(pd.Series(labels).value_counts().sort_index())
+
+#kmeans6() #silhouette score improvement after outlier removal
+
+def dbscan_pipeline(X, df, use_pca = True, n_components = 3):
+
+    scaler = StandardScaler()
+    scaler.fit(X)
+    X_scaled = scaler.transform(X)
+
+    if use_pca:
+
+        pca = PCA(n_components=n_components)
+        pca.fit(X_scaled)
+        X_processed = pca.transform(X_scaled)
+    
+    else:
+        X_processed = X
+
+    k = 5
+    neighbors = NearestNeighbors(n_neighbors=k)
+    neighbors.fit(X_processed)
+    distances, _ = neighbors.kneighbors(X_processed)
+    distances = np.sort(distances[:, k-1])
+
+    suggested_eps = np.percentile(distances, 90)
+    print(f'Suggested eps (90th percentile): {suggested_eps}')
+
+    plt.figure(figsize=(10, 5))
+    plt.plot(distances)
+    plt.axhline(y=suggested_eps, color='r', linestyle='--', label=f'Suggested eps={suggested_eps:.2f}')
+    plt.xlabel('Points sorted by distance')
+    plt.ylabel(f'{k}-th nearest neighbor distance')
+    plt.title('K-distance Graph')
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
+    dbscan = DBSCAN(eps=suggested_eps, min_samples=k)
+    dbscan.fit(X_processed)
+    labels = dbscan.fit_predict(X_processed)
+
+    n_clusters = len(set(labels)) - (1 if -1 in labels else 0)
+    n_noise = list(labels).count(-1)
+
+    print(f"\nResults:")
+    print(f"Number of clusters: {n_clusters}")
+    print(f"Number of noise points: {n_noise} ({n_noise/len(labels)*100:.1f}%)")
+    print(f"Cluster sizes:\n{pd.Series(labels).value_counts().sort_index()}")
+
+    if n_clusters > 1:
+
+        mask = labels != -1
+        if sum(mask) > 0:
+
+            score = silhouette_score(X_processed[mask], labels[mask])
+            print(f"Silhouette score: {score}")
+
+
+features = ['danceability', 'energy', 'valence', 'mode', 'tempo', 'speechiness', 'instrumentalness'] #dropped features with strong correlations
+X = df[features]
+df = pd.read_csv('../data/spotify_clean.csv', index_col=0)
+
+#dbscan_pipeline(X, df,  use_pca=True, n_components=3)
+
+kmeans6()
+
+def different_clustering(X, df, use_pca = True, n_components = 3):
+
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X)
+
+    if use_pca:
+
+        pca = PCA(n_components=n_components)
+        pca.fit(X_scaled)
+        X_processed = pca.transform(X_scaled)
+    
+    else:
+
+        X_processed = X
+
+    algs = {'KMeans': KMeans(n_clusters = 4, random_state=42), 'Hierarchical': AgglomerativeClustering(n_clusters=4), 'Spectral': SpectralClustering(n_clusters=4, random_state=42)}
+
+    for name, algo in algs.items():
+
+        if hasattr(algo, 'predict'):
+            algo.fit(X_processed)
+            labels = algo.predict(X_processed)
+        else:
+            labels = algo.fit_predict(X_processed)
+            
+        score = silhouette_score(X_processed, labels)
+        print(f"{name}: {score}")
+
+different_clustering(X, df, use_pca=True, n_components=3)
