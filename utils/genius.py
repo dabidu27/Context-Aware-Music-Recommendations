@@ -30,9 +30,10 @@ if __name__ == "__main__":
     load_dotenv()
     access_token = os.getenv('GENIUS_ACCESS_TOKEN')
     df = pd.read_csv('../data/spotify_clean.csv')
-    lyrics_list = get_lyrics(access_token, df)
-    df['lyrics'] = lyrics_list
-    df.csv('../data/spotify_clean_with_lyrics.csv', index = False)
+    df_sample = df.sample(1000)
+    lyrics_list = get_lyrics(access_token, df_sample)
+    df_sample['lyrics'] = lyrics_list
+    df_sample.to_csv('../data/sample1000_with_lyrics.csv', index = False)
 
     print('Lyrics collection complete')
 
