@@ -6,37 +6,44 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
 from torch.utils.data import DataLoader
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.decomposition import PCA
+import numpy as np
+
+def remove_outliers(X, df):
+
+    Q1 = np.quantile(X, 0.25, axis = 0)
+    Q3 = np.quantile(X, 0.75, axis = 0)
+    IQR = Q3 - Q1
+
+    upper_bound = Q3 + 1.5*IQR
+    lower_bound = Q1 - 1.5 * IQR
+
+    mask = ((X >= lower_bound) & (X <= upper_bound)).all(axis = 1)
+    return X[mask], df[mask].copy()
 
 
 def kmeans_model(df):
 
-    features = ['danceability', 'energy', 'valence', 'mode', 'tempo', 'speechiness', 'instrumentalness']
-
+    features = ['danceability', 'energy', 'valence', 'mode', 'tempo', 'speechiness', 'instrumentalness']#dropped features with strong correlations
+    print(df.head()) 
     X = df[features]
 
+    X_clean, df_clean = remove_outliers(X, df)
+
     scaler = StandardScaler()
-    scaler.fit(X)
-    X_scaled = scaler.transform(X)
+    X_scaled = scaler.fit_transform(X_clean)
 
-    scores = []
+    pca = PCA(n_components = 3)
+    pca.fit(X_scaled)
+    X_reduced = pca.transform(X_scaled)
 
-    for n_clusters in range (3, 11):
+    kmeans = KMeans(n_clusters=4, random_state=42)
+    kmeans.fit(X_reduced)
+    labels = kmeans.predict(X_reduced)
 
-        kmeans = KMeans(n_clusters=n_clusters, random_state=42)
-        kmeans.fit(X_scaled)
-        labels = kmeans.predict(X_scaled)
-        score = silhouette_score(X_scaled, labels)
-        scores.append((n_clusters, score))
-    
-    best_n_clusters, best_score = max(scores, key = lambda x: x[1])
+    df_clean['label'] = labels
 
-    final_kmeans = KMeans(n_clusters=best_n_clusters, random_state=42)
-    final_kmeans.fit(X_scaled)
-    labels = final_kmeans.predict(X_scaled)
-
-    df['label'] = labels
-
-    return df
+    return df_clean
 
 def create_pairs(df):
     pairs = []
@@ -64,6 +71,11 @@ def finetune_bert(df, model_name = 'all-MiniLM-L6-v2', num_epochs = 3):
 
     return model
 
+def create_lyrics_embedding(df, model):
+
+    df['lyrics_embedding'] = df['clean_lyrics'].apply(lambda x: model.encode(x))
+    return df
+
 if __name__ == "__main__":
 
     df = pd.read_csv('../data/sample1000_with_lyrics.csv')
@@ -75,5 +87,19 @@ if __name__ == "__main__":
 
     df = kmeans_model(df)
     pairs_df = create_pairs(df)
-    model = finetune_bert(pairs_df, model_name = 'all-MiniLM-L6-v2', num_epochs = 3)
-    model.save('../models/finetuned_bert')
+    #model = finetune_bert(pairs_df, model_name = 'all-MiniLM-L6-v2', num_epochs = 3)
+    #model.save('../models/finetuned_bert')
+
+    model = SentenceTransformer('../models/finetuned_bert')
+    df = create_lyrics_embedding(df, model)
+    print(df.head())
+
+    """
+    s = 0
+    for i in range(10):
+        s1 = df[df['label'] == 1].sample(1).iloc[0]['lyrics_embedding']
+        s2 = df[df['label'] == 1].sample(1).iloc[0]['lyrics_embedding']
+        similarity = cosine_similarity([s1], [s2])[0][0]
+        print(similarity)
+        
+    """

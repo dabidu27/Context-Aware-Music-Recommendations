@@ -265,6 +265,7 @@ def kmeans6():
     print(f"Silhouette score: {score}")
     
     print(pd.Series(labels).value_counts().sort_index())
+    
 
 #kmeans6() #silhouette score improvement after outlier removal
 

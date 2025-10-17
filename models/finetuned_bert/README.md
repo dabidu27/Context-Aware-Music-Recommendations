@@ -5,38 +5,170 @@ tags:
 - feature-extraction
 - dense
 - generated_from_trainer
-- dataset_size:1484
+- dataset_size:1036
 - loss:CosineSimilarityLoss
 base_model: sentence-transformers/all-MiniLM-L6-v2
 widget:
-- source_sentence: noc ta cz demony ca uj c si w agonii patrz na mnie jak na zdobycz
-    wok kr anio noc ta cz demony ca uj c si w agonii patrz na mnie jak na zdobycz
-    wok kr ej noc ta cz demony ca uj c si w agonii patrz na mnie jak na zdobycz wok
-    kr anio wiruj c jak narkotyk w tle leci hit co dosy go p kraju reszta nie mo e
-    przespa nocy w telefonie tylko jedna kreska ey bez skojarze pada mi bateria ey
-    wchodz klubu gdzie b dzie rze nia ey gor co jakbym wchodzi piek ey obok mnie wchodzi
-    moja pi kna mmm otwiera mi drzwi moja r ka mmm l duje na jej po ladkach wiesz
-    jak zerkam przez rami ona czule si u miecha ej l duje tu za ka dym razem nosz
-    mnie na r kach skacz w um wi rozjebane co rozjebane bior co zakazane wiecimy si
-    jak diament moher kr ci dalej niech si kr ci dalej noc ta cz demony ca uj c si
-    w agonii patrz na mnie jak na zdobycz wok kr anio wiruj c jak narkotyk w tle leci
-    hit co dosy go p kraju reszta nie mo e przespa nocy noc ta cz demony ca uj c si
-    w agonii patrz na mnie jak na zdobycz wok kr anio wiruj c jak narkotyk w tle leci
-    hit co dosy go p kraju reszta nie mo e przespa nocy big scythe diablice pokazuj
-    swoje rogi nigdy nie chcia em nawet ich zdoby zalewamy grzech red bull em czasem
-    czuj e jedyny spos b eby stamt uciec mi dzy piek em niebem nie wiem nawet czy
-    chc na ziemi zej tu gdzie ci ko z apa tlen jest oddychamy ju codziennie l duje
-    tu za ka dym razem nosz mnie na r kach skacz w um wi rozjebane co rozjebane bior
-    co zakazane wiecimy si jak diament moher kr ci dalej niech si kr ci dalej przechodz
-    korytarzem zupe nie sam jak palec czerwony dywan plami jak kubrick krewka skapie
-    zrobi ci shame shiner w czapce yletki zawsze chc mnie podgl da fajnie peaky blinders
-    nosz tablety w sakwie rozrzucam nim gra zaczn one takie fajne zanim otworz sw
-    j ryj jak banot w marriott palce zacisn tam gdzie zechc przyprawiasz rogi spice
-    girl adne z moich noc ta cz demony ca uj c si w agonii patrz na mnie jak na zdobycz
-    wok kr anio wiruj c jak narkotyk w tle leci hit co dosy go p kraju reszta nie
-    mo e przespa nocy noc ta cz demony ca uj c si w agonii patrz na mnie jak na zdobycz
-    wok kr anio wiruj c jak narkotyk w tle leci hit co dosy go p kraju reszta nie
-    mo e przespa nocy
+- source_sentence: party want ear drummers ooh party say want mike made ooh party
+    love want kiss want screw want party want party say want party love want kiss
+    want screw want right ayy red cups sweaty bodies everywhere hands air like care
+    cause came much fun bet somebody might get ready go home get hell cause gonna
+    go night til see sunlight alright la da di da di like party dancin molly doin
+    whatever want house rules stop stop see night see bout life stop stop run things
+    things run take nothin nobody yeah yeah party want party say want party love want
+    kiss want screw want homegirls big butt shakin like strip club remember god judge
+    ya forget haters cause somebody loves ya everyone line bathroom tryna get line
+    bathroom turned gettin turned yeah yeah yeah yeah la da di da di like party dancin
+    molly doin whatever want house rules stop stop see night see bout life stop stop
+    run things things run take nothin nobody yeah yeah party want party say want party
+    love want kiss want screw want party want house love want song sing want mouth
+    say want say yeah yeah yeah yeah stop stop see night see bout life stop stop run
+    things things run take nothin nobody yeah yeah yeah yeah yeah want want
+  sentences:
+  - heart chessboard making moves losing played many times nothing brag must new brew
+    gone singing blue moon turn way around tired fine line want forever mine forever
+    mine oh nothing sing sung oh love standout go ahead take floor jimi heart loose
+    stuck voodoo pick ever put look tired fine line want forever mine want forever
+    mine way move never seen looking head find ransom heart get reward winning crown
+    like trojan horse come back back back every time got shook like mobb rhyme come
+    nowhere come blessing life want forever mine oh oh forever mine forever mine oh
+    cookin new stew must put something food cause lost clouds oh tired fine line want
+    forever mine oh gotta forever mine
+  - name noelle dream rings bell got gym class half hour oh rocks keds tube socks
+    know give damn cause teenage dirtbag baby yeah teenage dirtbag baby listen iron
+    maiden baby ooh boyfriend dick brings gun school simply kick ass knew truth lives
+    block drives iroc know give damn cause teenage dirtbag baby yeah teenage dirtbag
+    baby listen iron maiden baby ooh oh yeah dirtbag know missin oh yeah dirtbag know
+    missin man feel like mold prom night lonely lo behold walkin must fake lip starts
+    shake know give damn got two tickets iron maiden baby come friday say maybe teenage
+    dirtbag baby like ooh oh yeah dirtbag know missin oh yeah dirtbag know missin
+  - got get away got get away got get away got get away got get away got get away
+    got get away got get away got get away nothin funk baby need peace mind stressed
+    today time make get away dealing people deal everyday got find place hide away
+    away madness far noise darkness late gotta way escape nonsense get away got get
+    away got get away got get away got get away got get away got get away got get
+    away got get away try run life way live wanna cause perrogative people always
+    trippin things say living future things way world keep doggin leave behind cause
+    gotta way escape nonsense get away got get away got get away got get away got
+    get away got get away got get away got get away got get away yo check groove b
+    kicking flow real smooth e double cess necessity move hit ya fit let rythm snatch
+    ya throw good rhyme watch coming ya release another brown batch jams slam touch
+    scram know cram understand damn way please get dance let free lance cause getting
+    started believe nothing brown party going got going bob ted rated number one flow
+    house pump fists say ho say ho ho ted bring back bring back dance oh got get away
+    got get away got get away got get away got get away got get away got get away
+    got get away never life ever felt something right baby baby tired mess unhapiness
+    guess gotta get away gotta get away wanna hurt nobody gotta get away gotta get
+    away gotta get away please somebody feel right baby sleep night need peace mind
+    far away darkness know need someone take away take away take away take away baby
+    please b brown outta coast
+- source_sentence: wanna start say gotta get chest got anger got malice little bit
+    regret know nobody else tell things gotta say gonna jot get way half man think
+    fill hole inside money drugs cars glad never ever baby cause love nothing unless
+    something oh feel sorry feel sad tried help made mad warning glad made without
+    breaking ran fucking far would never ever touch see alligator tears cause know
+    enough gonna start saying really meant well start take broken man right hands
+    put back parts half man think fill hole inside money girls cars glad never ever
+    baby cause love nothing unless something oh feel sorry feel sad tried help made
+    mad warning glad made without breaking oh feel sorry feel sad tried help made
+    mad warning bout hey ey ey ey yeah hey ey ey ey yeah hey ey ey ey yeah hey ey
+    ey ey yeah cause half man think fill hole inside money drugs cars glad never ever
+    baby cause love nothing unless something feel sad sad sad
+  sentences:
+  - sleep enough hard hard remember even angels fall sky even angels fall sky sun
+    goes tide collides bury forever even angels fall sky even angels fall sky given
+    cost everything coming back coming home take love away mean thing coming back
+    coming home old young lifetime landslide even angels fall sky even angels fall
+    sky reach hold let go lifeline even angels fall sky even angels fall sky given
+    cost everything coming back coming home take love away mean thing coming back
+    coming home days look way hey hey days everything always way midnight sun know
+    anyone stop heaven earth left alone given cost everything coming back coming home
+    take love away mean thing coming back coming home reach hold let go lifeline even
+    angels fall sky even angels fall sky
+  - vivo fingiendo un sue que se cuenta vivo imagin ndote lo imagin ndote pero el
+    amor se escapa aunque yo te mienta yo estaba busc ndote sola aqu esper ndote mir
+    ndome sin hablar yo habl ndote sin mirar lo que est sintiendo pero yo estoy muriendo
+    aguanto bailar contigo perdernos esta noche bailar contigo sin que importe nadie
+    bailar contigo en la arena los tambores tienes la llama que enciende mi alma nos
+    hace volar vivo imagin ndote lo imagin ndote vivo imagin ndote el mar de tu piel
+    quiero navegar perderme en las olas contigo bailando en las olas contigo un barco
+    de papel te quiero regalar para que vengas conmigo bailando en las olas conmigo
+    mir ndome sin hablar yo habl ndote sin mirar ya lo que est sintiendo ya sabes
+    que estoy muriendo aguanto bailar contigo perdernos esta noche bailar contigo
+    sin que importe nadie bailar contigo en la arena los tambores tienes la llama
+    que enciende mi alma nos hace volar vivo imagin ndote lo imagin ndote vivo imagin
+    ndote cuando bailas brillan las estrellas todas se derriten sobre el mar espuma
+    sobre el mar sigo caminando tras tus huellas aunque se derriten en el mar yo te
+    voy encontrar bailar contigo perdernos sta noche bailar contigo sin que importe
+    nadie bailar contigo en la arena los tambores tienes la llama que enciende mi
+    alma nos hace volar vivo imagin ndote lo imagin ndote vivo imagin ndote
+  - feel better hold one get bumpy hahahahahahahaha ten hell bent heaven tonight six
+    speed sex scene playing mind one look hooked motor runnin left heart started pumpin
+    ready best damn ride life give hell give yeah stand right give hell give yeah
+    stand right get ready go moving slow taking control pushing pedal floor begging
+    better hold tight hey hey hey hey hey hey hey hey got taste saved junkie life
+    fuels fire adrenaline high need speed got gunning one touch screams keep coming
+    ready best damn ride life give hell give yeah stand right give hell give yeah
+    stand right get ready go moving slow taking control pushing pedal floor begging
+    better hold tight hahahahahahahaha almost home come yeah give hell give yeah stand
+    right give hell give yeah stand right give hell give yeah stand right give hell
+    give yeah stand right get ready go moving slow taking control pushing pedal floor
+    begging better hold tight give hell give yeah give hell give yeah hey hey hey
+    hey hey hey hey hey hey hey hey hey hey hey hey hey hey
+- source_sentence: never know reason wrote rhyme bet never care yeah go way deliver
+    rhyme never know n g e l n g e l n g e l n g e l n g e l n g e l n g e l n g e
+    l n g e l n g e l n g e l n g e l n g e l
+  sentences:
+  - boy go telling love boy know belong another girl loves fine blow mind things blind
+    blind things things know know gonna boy got confused know gonna friends ask could
+    give one belongs someone else know love good would want anyone see fine fine blow
+    mind things blind blind blind things know know gonna boy got confused know gonna
+    know gonna boy got confused know gonna mine mine mine ooh supposed know gonna
+    boy got confused know gonna know gonna boy got confused know gonna know gonna
+    boy got confused know gonna boy got confused know gonna
+  - calling cars calling cars lookout tall light skinned brother dimples wearing black
+    kangol sweatsuit gold chain sneakers last seen farmers boulevard heading east
+    alias cool j bad ahh rapper rap quite like take muscle bound man put face sand
+    last mafioso emcee cop make say go wop think rhyme yeah boy bet cause met motherfucker
+    yet trendsetter better rhymes good got gold made plate says wish would battles
+    begin gotta join rhyme know win cool j arrived better make way ask anybody crowd
+    say kid play slaughter competition hobby job wear disguise owe mob got pinpoint
+    rap makes feel trapped many girls jock think phone tapped bad cool j cool j cool
+    j cool cool cool cool cool j j cool j cool cool cool cool cool cool cool cool
+    j j j j j j j j j like tyson ice soldier war makin sure try battle got concrete
+    rhymes rappin ten years even braggin sincere emcees win make em rust like tin
+    call jaws hat like shark fin bad got voice wax brothers think makin records must
+    relaxed stay way best rapper heard cool j kamikaze take look done used rock basement
+    number one happen time never standing line wanna try first better learn rhyme
+    pinnacle means reign supreme notorious crush like jellybean bad suspect last spotted
+    three members group dj bobcat e love cut creator extremely bad keep eyes open
+    use extreme caution eliminate punks cut em chunks souped heard ego shrunk devastating
+    good shame cause eat rappers like cannibal call insane strong bull course know
+    pull enjoy plus paid full buckaroo banzai bustin say kind rhymes make emcees wish
+    die never retire put mic shelf baddest rapper history rap bitter mad provin bad
+    want hit give hour plus pen pad emcees retreat cause know beat em eat em battle
+    ref cheat em baddest takin rookies forget oreos eat cool j cookies bad cool j
+    cool j cool j cool j j j cool j j j cool cool j never ever never never wearin
+    levis battle try treat like stepchild tell mommy bye bye slaughterin emcees never
+    get whipped retire get worshiped like old battleship bad rappers know enter center
+    say yo yo go paycheck large mr bogart charge punter hunter raccoon lodge original
+    todd teachin hard take skin snake split pea pod novice noble dissect tongue attila
+    hun khan abdullah hussein vocals exact like rack pinion jag try brag get rhymes
+    grab bag good scavenger catfish vulture tongue chisel composition sculptor bad
+    think gonna need backup think gonna need backup give walkie talkie yo cool j never
+    catch even try cause bad ya understand ahh bad
+  - cold outside late come oh even sleep night cause oh parked outside walking door
+    oh wait another night cause oh oooh oooh give attention baby obsession oooh oooh
+    give love affection baby obsession baby obsession baby obsession side clothes
+    floor oh wanna say goodbye want ooh oooh give attention baby obsession oooh oooh
+    give love affection baby obsession baby obsession baby obsession obsession oooh
+    oooh gotta know gotta know know know know baby obsession baby obsession baby obsession
+    baby obsession baby obsession
+- source_sentence: streets look one notice become walked far give give gonna give
+    love love like hurricane give love love like hurricane time slip think seen tonight
+    sit notice anymore forgiveness still table fire burns somewhere gonna fight harder
+    get back try leave dare make swear give gonna give love love like hurricane give
+    gonna give love love like hurricane give gonna give love love like hurricane
   sentences:
   - oh oh oh oh oh oh oh oh many wrongs right many many wrongs night many wrongs night
     oh ooh caught l yeah yeah yeah caught race yeah yeah yeah tryna keep faith tryna
@@ -54,254 +186,80 @@ widget:
     even gotta drive yeah ayy caught l yeah ayy ayy caught l yeah yeah caught l many
     wrongs right many songs write many drinks pour night many many wrongs right many
     wrongs night many wrongs right many many oh oh oh oh oh oh oh oh
-  - eres una problem tica eres una problem tica huh eres nada que una problem tica
-    chica volviste enganchar desde el minuto que te sentaste la forma en la que mord
-    tu labio hizo que mi cabeza duera vueltas despu de un trago dos fui masilla en
-    tus manos si tendr la fuerza para pararme proble problem tica yeah ese es tu segundo
-    nombre que eres bu na pero est atrapada en mi c rebro quiero saber por qu se siente
-    tan bien pero duele tanto mi mente sigue diciendo corre tan r pido como puedas
-    digo que ya estuvo pero luego tiras hacia atr juro que est dando un ataque al
-    coraz n problem tica es como si siempre estuvieras ah en las esquinas de mi mente
-    veo una silueta cada vez que cierro los ojos debe haber veneno en esas yemas de
-    los dedos tuyos porque sigo regresando otra vez por proble problem tica yeah ese
-    es tu segundo nombre que eres buena pero est atrapada en mi cerebro quiero saber
-    por qu se siente tan bien pero duele tanto mi mente sigue diciendo corre tan r
-    pido como puedas digo que ya estuvo pero luego tiras hacia atr juro que est dando
-    un ataque al coraz n problem tica por qu se siente tan bien pero duele tanto mi
-    mente sigue diciendo corre tan r pido como puedas digo que ya estuvo pero luego
-    tiras hacia atr juro que est dando un ataque al coraz n problem tica yeah talvez
-    ahora estoy loco porque sigo haciendo la misma maldita cosa pensando que algun
-    vamos cambiar pero sabes exactamente como revertirlo hacerme olvidar mi nombre
-    lo que por un demonio hagas lo recordar ir hasta noviembre aparecer de nuevo el
-    siguiente verano yeah pico tu segundo nombre es prada te conformar chica estoy
-    cansado del drama eres una problem tica pero maldici n chica es como si amara
-    el problema ni siquiera puedo explicar por qu por qu se siente tan bien pero duele
-    tanto mi mente sigue diciendo corre tan r pido como puedas digo que ya estuvo
-    pero luego tiras hacia atr juro que est dando un ataque al coraz n problem tica
-    por qu se siente tan bien pero duele tanto mi mente sigue diciendo corre tan r
-    pido como pueda digo que ya estuvo pero luego tiras hacia atr juro que est dando
-    un ataque al coraz n problem tica
-  - aventador x wu tang cvpellv cvpellv
-- source_sentence: oh oh oh oh oh oh oh oh oh oh oh turn around til upside bad guy
-    know proud even tried believe every time seasons change love went cold feed flame
-    cause let go run away running circles run away run away dare something waiting
-    take blame run away running circles run away run away run away let go got feeling
-    time let go said knew doomed get go thought special special sex though sex though
-    still hear echoes got feeling time let go let go seasons change love went cold
-    feed flame cause let go run away running circles run away run away dare something
-    waiting take blame run away running circles run away run away run away maybe understand
-    going got lose make mind tell gonna let go seasons change love went cold feed
-    flame cause let go run away running circles run away run away dare something waiting
-    take blame run away running circles run away run away run away
+  - baby tell getting high tried hard something feeling lonely never used either arguing
+    leave know something missing holding holding nothing care much obvious already
+    gone unleash weapon aim chest love drug one trigger shoot shoot wanna remember
+    yeah yeah yeah try change mind blood hands shoot shoot wanna remember yeah yeah
+    shoot shoot one trigger hey hey hey soul soul used rock slow felt blood boil heartbeat
+    rush free slipping one left go hold breath say want want stress say feel different
+    holding holding nothing care much obvious already gone unleash weapon aim chest
+    love drug one trigger shoot shoot wanna remember yeah yeah yeah try change mind
+    blood hands shoot shoot wanna remember yeah yeah shoot shoot one trigger hey hey
+    hey
+  - lonely know waiting cross hair shot away leave leave broken shattered lie cross
+    hair shot die oh oh oh know leaving say know say know say take say know move time
+    slow say take well say know say know say take move could die eyes move could die
+    want take know leaving know leaving know leaving know leaving say know say know
+    say take wane could die wait could die want take move could die eyes move die
+    come take know leaving know leaving know leaving know leaving
+- source_sentence: yeah still rider sole survivor back wall nowhere turn feel heat
+    fire burn nowhere run wire remember still rider still rider still survivor sole
+    survivor remember still rider still rider ever known post city lights know got
+    thing ready case bang try plug put blood stain go history nigga forget label rider
+    even though struggling trying find ways double cuz hood nigga bubbling funny people
+    love community crumbling keep stumbling end shoveling survivor always might move
+    candy believe money sucker free ak load k throw state case closed back wall turn
+    feel heat fire burn run wire remember still rider still rider still survivor sole
+    survivor remember still rider still rider like niggas really never made home state
+    getting money trying best find family matter hustle going find way get gotta put
+    muscle stand corner till morning rider like everybody hood nobody thought could
+    see nigga whats good gripping leather wood mille hidden hood get rich give pour
+    like modern day robin hood survivor always might move candy believe money sucker
+    free ak load k throw state case closed back wall turn feel heat fire burn run
+    wire remember still rider still rider still survivor sole survivor remember still
+    rider still rider keep riding got surviving keep riding got keep providing rider
+    keep surviving yeah keep providing come let hear sing back wall theres son turn
+    feel heat fire burn theres run youre wire remember still rider still rider still
+    survivor sole survivor remember still rider still rider
   sentences:
-  - street light light life tonight hold peace sign till feeling right world world
-    light life tonight girl girl till feeling right street light light life tonight
-    hold peace sign till feeling right world world light life tonight girl girl till
-    feeling right found corner store says come around told done profound food soul
-    future nubian queen moan yeah sun shining door said let hang around deep brown
-    eyes say sure food soul cause lost dream control know right say remember nights
-    grey see light day swear knew right away hope night skies light life tonight let
-    moment shine right life
-  - hurtin baby broken need lovin lovin need without smokin weed got beggin beggin
-    knees wanna needin love wanna deep love killin away ooh baby cause really care
-    wanna gotta get one little taste sugar yes please come put right cause need little
-    love little sympathy yeah show good lovin make alright need little sweetness life
-    sugar yes please come put babe broken pieces pick leave hangin hangin come give
-    without insecure one thing one thing livin wanna needin love wanna deep love killin
-    away ooh baby cause really care wanna gotta get one little taste sugar yes please
-    come put right cause need little love little sympathy yeah show good lovin make
-    alright need little sweetness life sugar yes please come put yeah want red velvet
-    want sugar sweet let nobody touch unless somebody gotta man way cause girl hotter
-    southern california day wanna play games gotta afraid give shy shit makeup sugar
-    sugar yes please come put right cause need little love little sympathy yeah show
-    good lovin make alright need little sweetness life sugar yes please come put sugar
-    yes please come put right cause need little love little sympathy yeah show good
-    lovin make alright need little sweetness life sugar yes please come put
-  - letra de cuenta pendiente ft alejandro sanz mmm ah te quejes te quejes ahhh eh
-    eh eh de las tentaciones que yo tengo jurar que eres la mejor yo prefiero que
-    parta un beso que negarte el coraz n malditas las ganas que tengo de verte que
-    lluevas sobre mi desierto hay entre los dos una cuenta pendiente qu te parece
-    si arreglamos eso ay mame llevame un ratito al paraiso ponme las estrellas en
-    el piso hace falta tanto compromiso sin compromiso acuerdate que tengo la mente
-    peligrosa esta noche que te ves como una diosa se est poniendo buena la cosa ay
-    la cosa gusta gusta tienes algo que gusta gusta gusta tienes algo que gusta eres
-    el pecado de la tierra que mi cuerpo necesita quitate la pena perd n pero primero
-    la camisa malditas las ganas que tengo de verte de que lluevas sobre mi desierto
-    hay entre los dos una cuenta pendiente qu te parece si arreglamos eso ay mame
-    llevame un ratito al paraiso ponme las estrellas en el piso hace falta tanto compromiso
-    sin compromiso acuerdate que tengo la mente peligrosa esta noche que te ves como
-    una diosa se est poniendo buena la cosa la cosa gusta gusta tienes algo que gusta
-    gusta gusta tienes algo que gusta tienes algo tienes algo que gusta tienes algo
-    tienes algo ay mame llevame un ratito al paraiso ponme las estrellas en el piso
-    hace falta tanto compromiso sin compromiso acuerdate que tengo la mente peligrosa
-    esta noche que te ves como una diosa se est poniendo buena la cosa ay la cosa
-    gusta gusta tienes algo que gusta gusta gusta tienes algo tienes algo que gusta
-    tienes algo tienes algo algo que gusta malditas las ganas que tengo de verte tienes
-    algo que gusta
-- source_sentence: sometimes feel doubt cause keep stars bound really matter cause
-    really matter really matter cause really matter cause feel free really matter
-    sometimes feel doubt cause keep stars bound really matter cause really matter
-    cause feel free really matter
-  sentences:
-  - one one two check right yo verse diddy notorious b g yo sun shine forever turn
-    track little bit long might well shine together better never business pleasure
-    p diddy fam know better yeah right matter air tight hear somethin make sure hear
-    right make ass outta assumin music keeps moving proving know two levels baby hug
-    baby make love baby shit hot talkin crazy gon get nuthin choked jealousy gon leave
-    broke thing left god cats b g know hard cats win cause smart cats makin facts
-    uh raking plaques commission ask permission hit em like hit wifey heard us murderous
-    shady low lately feds hate son satan say killing blatant hesitatin mama crib waitin
-    duct tapin fam destiny lays hands gat lays waist francis izz h phenomenal gun
-    rest vest abdominal rhyme bars could buy cars kick flows could pick hoes excellence
-    presence never tense never hesitant leave nigga bent real quick real sick brawl
-    nights perform like mike anyone tyson jordan jackson action pack guns ridiculous
-    quick bust ends touch kids girl touch world clutch two auto matos used call fatso
-    call castro rap flows militant faggots killing shit oops cristal keep spilling
-    shit overdid holmes danger zone alone hold hands say like shady frankie baby fantastic
-    graphic tryin make dough like jurassic park quick spark kids start shit see underboss
-    holocaust truly frank white got real live shit front back people world fuck niggas
-    niggas fuck bitches bitches got real live shit front back people world fuck niggas
-    niggas fuck bitches bitches ha put money table get math break split get laugh
-    see later dawg get stash bed full money get ass never lose passion go platinum
-    said live til cash gone funny use plastic craft make classics hotter acid p rollin
-    tape cd billboard killer team iller fam ammo every channel hot long time burning
-    like candle check distribution songs bump houston like scarface produced em gotta
-    like mad cause tell tell might got shit mapped tight brass knuckles flashlights
-    heaters two seaters two miras senoritas kiss rings meet us p diddy run city show
-    pity witty one frank crook brook mad broke neck coke connect respect squeeze til
-    diminish shootouts twenty minutes finish venice took loot escaped coupe break
-    bread kiss peniro sheek louch black rob joined mob replacing niggas step macin
-    placin funerals criminals turned aroused brick city nobody come like p diddy business
-    wise play men hide money island cayman betray men spray men position competition
-    another day life commission got real live shit front back niggas world fuck niggas
-    niggas fuck bitches bitches got real live shit front back niggas world fuck niggas
-    niggas fuck bitches bitches got real live shit front back niggas world fuck niggas
-    niggas fuck bitches bitches got real live shit front back niggas world fuck niggas
-    niggas fuck bitches bitches got real live shit hear fuck niggas wanna fucked huh
-    fucked
-  - whisper whisper got got something need lot stop buy one see better better listen
-    mister help sister show fly stop try one see everything blowing whisper whisper
-    keep quiet like try stop buy one illegal means whisper whisper got got something
-    need lot stop buy one see better better whisper whisper whisper whisper whisper
-    whisper whisper whisper man woman needs marriage humans could please arouse ease
-    would please call matter name million things explanations sexual patience nation
-  - non mi toccare perch ti odio non cancellarmi perch ho bisogno di rimanerti testa
-    il tempo di sfatare il sogno e rider finch non passa e ti capisco perch la stessa
-    malinconia di quando tutto torna e niente resta cosa ti lascio di e di te cosa
-    prendo prendo un tatuaggio prendo quella sera prendo questa lacrima e cosa mi
-    lasci di te e di tu cosa prendi scegli una canzone scegli il mio silenzio scelgo
-    di non rivederti nasce dal colore di una rosa appassita un altra vita poche idee
-    sempre le stesse prometto basta promesse e ho cambiato e ho cambiato e anche fosse
-    l ultima fermata lascio la mia vita molto meglio di come l ho trovata fermo agli
-    ostacoli accetto miracoli andiamo altrove torneremo non ti ho mai avuto tu nemmeno
-    non temi neanche dio e spero ti perdoni lui almeno lo avevo gi previsto le conseguenze
-    sono tue ti avevo avvisato per l ultima volta e con questa sono due nasce dal
-    colore di una rosa appassita un altra vita poche idee sempre le stesse prometto
-    basta promesse e ho cambiato e ho cambiato e anche fosse l ultima fermata lascio
-    la mia vita molto meglio di come l ho trovata di come l hai lasciata di come l
-    hai lasciata e con tutto ci che ho visto difficile capire se esisto e nonostante
-    tutto ora mi guardo e poi mi chiedo dove vai fermo agli ostacoli accetto miracoli
-- source_sentence: sunshine gone warm away sunshine gone always gone long anytime
-    goes away wonder time gone wonder gonna stay sunshine gone house home anytime
-    goes away know know know know know know know know know know know know know know
-    know know know know know know know know know know know know hey ought leave young
-    thing alone sunshine gone sunshine gone darkness everyday sunshine gone house
-    home anytime goes away anytime goes away anytime goes away anytime goes away
-  sentences:
-  - need forever forever forever need forever forever forever still wish upon star
-    world feels alone ever wake scream name take breath away let say much cause world
-    cold yeah set destiny tryna hold right need forever forever forever need forever
-    forever forever need forever forever forever need forever forever forever need
-    forever forever forever need forever forever forever need forever forever forever
-    need forever forever forever sometimes silence makes hard leave see true ever
-    believe would break chains see hop trains get take breath away let say much cause
-    world cold yeah set destiny tryna hold right need forever forever forever need
-    forever forever forever need forever forever forever need forever forever forever
-    comin comin comin comin comin comin look love found comin comin comin comin look
-    love found comin comin comin comin look love found comin comin right right need
-    forever forever forever need forever forever forever need forever forever forever
-    need forever forever forever take breath away let say much cause world cold yeah
-    set destiny tryna hold right need forever forever forever need forever forever
-    forever right right
-  - get sick times lives almost choose way forgetting everything taught act certain
-    way many times face crying endlessly sick sick way way confusion takes head way
-    way confusion takes head sick way way confusion takes head way way confusion takes
-    head fucking sick make right choice guess never know live actions many times face
-    crying endlessly sick sick way way confusion takes head way way confusion takes
-    head sick way way confusion takes head way way confusion takes head fucking sick
-    sick sick sick fucking sick sick sick way way confusion takes head way way confusion
-    takes head sick way way confusion takes head way way confusion takes head fucking
-    sick sick sick sick sick
-  - unh yeah unh family keep tight keep tight keep tight alright unh yah yah yah go
-    go unh right family brothers sisters family get everybody sing family brothers
-    sisters family get everybody sing everyone see together walk fly like birds feather
-    tell lie people around us say hey close yeah yeah let state record giving love
-    family dose family brothers sisters family get everybody sing family brothers
-    sisters family get everybody sing living life fun begun get share world delights
-    high hopes future goal sight get depressed call golden rule faith things go wrong
-    oh family jewel family brothers sisters family get everybody sing family brothers
-    sisters family get everybody sing come come come family brothers sisters family
-    get everybody sing family brothers sisters family get everybody sing
-- source_sentence: falling like dominoes reaching stars one one hands illuminate sky
-    goes let take away guide night come shine light little brighter set fire afraid
-    inside ready await come way enjoy ride take away find answer arcadia arcadia arcadia
-    arcadia
-  sentences:
-  - ey ey ey middelvinger gaat omhoog als ik mijn ex zie ik heb altijd haast als ik
-    mijn ex zie ik moest naar de kapper net als messi want ik hou van vrouwen net
-    een lesbie ey waar je tringeling laat mij je bellen op je tringeling ik wil je
-    appen op je tringeling daarna kom ik pull bij je ding dong wwaar je tringeling
-    laat mij je bellen op je tringeling ik wil je appen op je tringeling daarna kom
-    ik pull bij je ding dong geef je tringeling schatje om te blablabla ik laat je
-    hihihi hehehe hahaha als chillen breng ik hennesy alaka en er iemand thuis kom
-    ik van de back net alaba ik je al op snap en op insta zonder filter en je lijkt
-    nog steeds op kim k je eet goed volle melk je brinta geen poederdoos geen fissie
-    vol met pimba wil je drinken kan je schenken van een paar flessen want jij bent
-    sappig sappig net een paar bessen niet schrikken ik kan prikken net een paar messen
-    ik kan je rijden zit je goed nog een paar lessen middelvinger gaat omhoog als
-    ik mijn ex zie ik heb altijd haast als ik mijn ex zie ik moest naar de kapper
-    net als mess want ik hou van vrouwen net een lesbie ey waar je tringeling laat
-    mij je bellen op je tringeling ik wil je appen op je tringeling daarna kom ik
-    pull bij je ding dong waar je tringeling laat mij je bellen op je tringeling ik
-    wil je appen op je tringeling daarna kom ik pull bij je ding dong ik kom langs
-    met die ding dong gooi die bana dom op je net king kong je mattie net niet lit
-    net vonk dong jij neemt hennesy zet op een leveltje ik ben alleen ben alleen met
-    n delletje ben met de gang en zijn een beetje hebberig let op je bitch want ze
-    doet een beetje kecherig bom dik mn broek strak minnie verstang want je praat
-    geen guap dat ik ben een brugger net schareblad middelvinger gaat omhoog als ik
-    mijn ex zie ik heb altijd haast als ik mijn ex zie ik moest naar de kapper net
-    als mess want ik hou van vrouwen net een lesbie ey waar je tringeling laat mij
-    je bellen op je tringeling ik wil je appen op je tringeling daarna kom ik pull
-    bij je ding dong waar je tringeling laat mij je bellen op je tringeling ik wil
-    je appen op je tringeling daarna kom ik pull bij je ding dong barman twee barcardi
-    deze heeft een ass net als cardi shat ik ben met johnny vijf barkie ik wil je
-    niet meer hebben nul zes vijf barkie laat je achter de orde net jelle zoek een
-    bad bitch estelle barman doe nog een paar flessen
-  - legends never die world callin hear screaming name legends never die become part
-    every time bleed reaching greatness relentless survive never lose hope everything
-    cold fighting near deep bones ride smoke fire fierce oh pick cause legends never
-    die world calling hear screamin name legends never die become part every time
-    bleed reaching greatness legends never die written eternity never see price costs
-    scars collected lives everything lost pick hearts avenge defeat starts suffer
-    harm touch dream oh pick cause legends never die world calling hear screamin name
-    legends never die become part every time bleed reaching greatness legends never
-    die world callin name begging fight pick pick cause legends never die world calling
-    hear screamin name legends never die become part every time bleed reaching greatness
-    legends never die oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh
-    oh oh oh oh oh oh
-  - feel better hold one get bumpy hahahahahahahaha ten hell bent heaven tonight six
-    speed sex scene playing mind one look hooked motor runnin left heart started pumpin
-    ready best damn ride life give hell give yeah stand right give hell give yeah
-    stand right get ready go moving slow taking control pushing pedal floor begging
-    better hold tight hey hey hey hey hey hey hey hey got taste saved junkie life
-    fuels fire adrenaline high need speed got gunning one touch screams keep coming
-    ready best damn ride life give hell give yeah stand right give hell give yeah
-    stand right get ready go moving slow taking control pushing pedal floor begging
-    better hold tight hahahahahahahaha almost home come yeah give hell give yeah stand
-    right give hell give yeah stand right give hell give yeah stand right give hell
-    give yeah stand right get ready go moving slow taking control pushing pedal floor
-    begging better hold tight give hell give yeah give hell give yeah hey hey hey
-    hey hey hey hey hey hey hey hey hey hey hey hey hey hey
+  - heart chessboard making moves losing played many times nothing brag must new brew
+    gone singing blue moon turn way around tired fine line want forever mine forever
+    mine oh nothing sing sung oh love standout go ahead take floor jimi heart loose
+    stuck voodoo pick ever put look tired fine line want forever mine want forever
+    mine way move never seen looking head find ransom heart get reward winning crown
+    like trojan horse come back back back every time got shook like mobb rhyme come
+    nowhere come blessing life want forever mine oh oh forever mine forever mine oh
+    cookin new stew must put something food cause lost clouds oh tired fine line want
+    forever mine oh gotta forever mine
+  - vivo fingiendo un sue que se cuenta vivo imagin ndote lo imagin ndote pero el
+    amor se escapa aunque yo te mienta yo estaba busc ndote sola aqu esper ndote mir
+    ndome sin hablar yo habl ndote sin mirar lo que est sintiendo pero yo estoy muriendo
+    aguanto bailar contigo perdernos esta noche bailar contigo sin que importe nadie
+    bailar contigo en la arena los tambores tienes la llama que enciende mi alma nos
+    hace volar vivo imagin ndote lo imagin ndote vivo imagin ndote el mar de tu piel
+    quiero navegar perderme en las olas contigo bailando en las olas contigo un barco
+    de papel te quiero regalar para que vengas conmigo bailando en las olas conmigo
+    mir ndome sin hablar yo habl ndote sin mirar ya lo que est sintiendo ya sabes
+    que estoy muriendo aguanto bailar contigo perdernos esta noche bailar contigo
+    sin que importe nadie bailar contigo en la arena los tambores tienes la llama
+    que enciende mi alma nos hace volar vivo imagin ndote lo imagin ndote vivo imagin
+    ndote cuando bailas brillan las estrellas todas se derriten sobre el mar espuma
+    sobre el mar sigo caminando tras tus huellas aunque se derriten en el mar yo te
+    voy encontrar bailar contigo perdernos sta noche bailar contigo sin que importe
+    nadie bailar contigo en la arena los tambores tienes la llama que enciende mi
+    alma nos hace volar vivo imagin ndote lo imagin ndote vivo imagin ndote
+  - got love sights watch love bites make love look mirror think look like tell lies
+    say forever think twice touch see ooh babe okay alone let go wild willing show
+    ooh come want touch much baby cause making love might drive crazy know think love
+    way make want decide break love bites love bleeds bringing knees love lives love
+    dies surprise love begs love pleads need somewhere else getting please wake walk
+    love throw ooh babe want touch much baby cause making love might drive crazy oh
+    love bites love bleeds bringing knees love lives love dies surprise love begs
+    love pleads need oh yeah want touch much baby cause making love might drive crazy
+    know think love way make want decide break love bites love bleeds bringing knees
+    love lives love dies love bites love bleeds bringing knees love lives love dies
+    surprise love begs love pleads need got love sights watch love bites yes bloody
+    hell
 pipeline_tag: sentence-similarity
 library_name: sentence-transformers
 ---
@@ -356,9 +314,9 @@ from sentence_transformers import SentenceTransformer
 model = SentenceTransformer("sentence_transformers_model_id")
 # Run inference
 sentences = [
-    'falling like dominoes reaching stars one one hands illuminate sky goes let take away guide night come shine light little brighter set fire afraid inside ready await come way enjoy ride take away find answer arcadia arcadia arcadia arcadia',
-    'feel better hold one get bumpy hahahahahahahaha ten hell bent heaven tonight six speed sex scene playing mind one look hooked motor runnin left heart started pumpin ready best damn ride life give hell give yeah stand right give hell give yeah stand right get ready go moving slow taking control pushing pedal floor begging better hold tight hey hey hey hey hey hey hey hey got taste saved junkie life fuels fire adrenaline high need speed got gunning one touch screams keep coming ready best damn ride life give hell give yeah stand right give hell give yeah stand right get ready go moving slow taking control pushing pedal floor begging better hold tight hahahahahahahaha almost home come yeah give hell give yeah stand right give hell give yeah stand right give hell give yeah stand right give hell give yeah stand right get ready go moving slow taking control pushing pedal floor begging better hold tight give hell give yeah give hell give yeah hey hey hey hey hey hey hey hey hey hey hey hey hey hey hey hey hey',
-    'legends never die world callin hear screaming name legends never die become part every time bleed reaching greatness relentless survive never lose hope everything cold fighting near deep bones ride smoke fire fierce oh pick cause legends never die world calling hear screamin name legends never die become part every time bleed reaching greatness legends never die written eternity never see price costs scars collected lives everything lost pick hearts avenge defeat starts suffer harm touch dream oh pick cause legends never die world calling hear screamin name legends never die become part every time bleed reaching greatness legends never die world callin name begging fight pick pick cause legends never die world calling hear screamin name legends never die become part every time bleed reaching greatness legends never die oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh',
+    'yeah still rider sole survivor back wall nowhere turn feel heat fire burn nowhere run wire remember still rider still rider still survivor sole survivor remember still rider still rider ever known post city lights know got thing ready case bang try plug put blood stain go history nigga forget label rider even though struggling trying find ways double cuz hood nigga bubbling funny people love community crumbling keep stumbling end shoveling survivor always might move candy believe money sucker free ak load k throw state case closed back wall turn feel heat fire burn run wire remember still rider still rider still survivor sole survivor remember still rider still rider like niggas really never made home state getting money trying best find family matter hustle going find way get gotta put muscle stand corner till morning rider like everybody hood nobody thought could see nigga whats good gripping leather wood mille hidden hood get rich give pour like modern day robin hood survivor always might move candy believe money sucker free ak load k throw state case closed back wall turn feel heat fire burn run wire remember still rider still rider still survivor sole survivor remember still rider still rider keep riding got surviving keep riding got keep providing rider keep surviving yeah keep providing come let hear sing back wall theres son turn feel heat fire burn theres run youre wire remember still rider still rider still survivor sole survivor remember still rider still rider',
+    'heart chessboard making moves losing played many times nothing brag must new brew gone singing blue moon turn way around tired fine line want forever mine forever mine oh nothing sing sung oh love standout go ahead take floor jimi heart loose stuck voodoo pick ever put look tired fine line want forever mine want forever mine way move never seen looking head find ransom heart get reward winning crown like trojan horse come back back back every time got shook like mobb rhyme come nowhere come blessing life want forever mine oh oh forever mine forever mine oh cookin new stew must put something food cause lost clouds oh tired fine line want forever mine oh gotta forever mine',
+    'got love sights watch love bites make love look mirror think look like tell lies say forever think twice touch see ooh babe okay alone let go wild willing show ooh come want touch much baby cause making love might drive crazy know think love way make want decide break love bites love bleeds bringing knees love lives love dies surprise love begs love pleads need somewhere else getting please wake walk love throw ooh babe want touch much baby cause making love might drive crazy oh love bites love bleeds bringing knees love lives love dies surprise love begs love pleads need oh yeah want touch much baby cause making love might drive crazy know think love way make want decide break love bites love bleeds bringing knees love lives love dies love bites love bleeds bringing knees love lives love dies surprise love begs love pleads need got love sights watch love bites yes bloody hell',
 ]
 embeddings = model.encode(sentences)
 print(embeddings.shape)
@@ -367,9 +325,9 @@ print(embeddings.shape)
 # Get the similarity scores for the embeddings
 similarities = model.similarity(embeddings, embeddings)
 print(similarities)
-# tensor([[1.0000, 0.3547, 0.4938],
-#         [0.3547, 1.0000, 0.3955],
-#         [0.4938, 0.3955, 1.0000]])
+# tensor([[1.0000, 0.4609, 0.4224],
+#         [0.4609, 1.0000, 0.5616],
+#         [0.4224, 0.5616, 1.0000]])
 ```
 
 <!--
@@ -414,19 +372,19 @@ You can finetune this model on your own dataset.
 
 #### Unnamed Dataset
 
-* Size: 1,484 training samples
+* Size: 1,036 training samples
 * Columns: <code>sentence_0</code>, <code>sentence_1</code>, and <code>label</code>
 * Approximate statistics based on the first 1000 samples:
-  |         | sentence_0                                                                         | sentence_1                                                                          | label                                                         |
-  |:--------|:-----------------------------------------------------------------------------------|:------------------------------------------------------------------------------------|:--------------------------------------------------------------|
-  | type    | string                                                                             | string                                                                              | float                                                         |
-  | details | <ul><li>min: 2 tokens</li><li>mean: 177.7 tokens</li><li>max: 256 tokens</li></ul> | <ul><li>min: 2 tokens</li><li>mean: 175.06 tokens</li><li>max: 256 tokens</li></ul> | <ul><li>min: 0.0</li><li>mean: 0.5</li><li>max: 1.0</li></ul> |
+  |         | sentence_0                                                                          | sentence_1                                                                          | label                                                         |
+  |:--------|:------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------|:--------------------------------------------------------------|
+  | type    | string                                                                              | string                                                                              | float                                                         |
+  | details | <ul><li>min: 2 tokens</li><li>mean: 186.14 tokens</li><li>max: 256 tokens</li></ul> | <ul><li>min: 2 tokens</li><li>mean: 183.39 tokens</li><li>max: 256 tokens</li></ul> | <ul><li>min: 0.0</li><li>mean: 0.5</li><li>max: 1.0</li></ul> |
 * Samples:
-  | sentence_0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | sentence_1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | label            |
-  |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------|
-  | <code>yeah yeah yeah yeah yeah yeah yeah things like built last might fade like forget past got questions ask know stories need let know leave go come believe close yeah even get sprung love get enough yeah run away love hate love heartbreak bankrupt many days daze better wake put face place space nobody makes feel like know lookin someone make move ooh tell make planet feel like home us versus time door closin far beyond control saved soul close broken much better wait forever day got put together break energy take never stop love get enough yeah never slip never fall tried tell bout better life get involved big small fault keep safe vault blindfolded keep goin til hit wall yeah never goin motions tryna lay body slowly go go love get enough</code> | <code>alles unnormal alles unnormal alles unnormal ah ah ahh unnormal wir fahr n rallye block hol n gold wie bei italian job keine zeit f r f nfzig cent wie young buck ich mach shows f die stadien voll unnormal nehm auf der party ein n drink bleib f nf minuten kl r ne barbie dann drin sie ist elegant keine kardashian kim fahr mit ihr mein ferrari nach wien unnormal unnormal u u unnormal sie gibt arsch f r meinen nam n null moral nein ich geh nicht fremd sie macht nur oral du hast f nfhundert ps doch kommst null voran vater verzeih dein sohn er macht nde sie kam wie pamela nem roten kost wie soll ich sie nicht mhh guck nur die form von ihr mhh wir rollen durch die stadt jeder wei wer wir sind unser leben nicht das gleiche seit diesem ring und die ganzen platten der beweis dass es stimmt zeit sie verrinnt unnormal schwimm n einem teich voller haifische drin dieses life nicht das gleiche seit diesem ring und sie liken jeden schei auf meiner seite blind weil jedes lied klingt unnormal und ich fi...</code> | <code>0.0</code> |
-  | <code>empty mansion rain coast vibe feel inside soul like spider web wove heart used ghost ooh yeah making uneasy hear sounds hallway rocking chairs moving falling much freaking much freaking much freaking freaking much freaking much freaking much fr aking much much freaking much much much fr aking much much silence woods snows vibe piece inside soul like spider web wove heart used ghost ooh yeah making uneasy hear sounds hallway rocking chairs moving falling much freaking much freaking much freaking much freaking much much freaking much much much freaking much much</code>                                                                                                                                                                                    | <code>woah write write girl reply follow commands come girl comply want cause life televised see lies eyes different selling dreams tonight could way rubbin thighs morning go back home ties yeah write girl tell would reply know used thief night want type guy life put disguise night put life line pay mind bitches like ticket fine gave shoulder lean cry uh cry one slow stay forty rounds hit perc gave forty rounds woah far finished done keep grabbing waist tryna run put foot til numb every time moan like uh uh switched dollar know rules game cause father artist yeah know scholars artist go home got problems keep arguing bodies girl main body take serious know play wanna get better baby pray play go fake play part ever complain called beautiful changed body body girl yeah really changed couples eatin got plain scallops clam chowder gon raising damn toddler lie baby girl way around nothin say got niggas pull spray gone yeah say gone say right like sing along shit got mad said could bring friend a...</code> | <code>1.0</code> |
-  | <code>see tears eyes feel helpless inside oh love need hide let love heart tired cold hands red eyes packed bags midnight weeks know came roll cigarette forget mess waiting sidelines sidelines see tears eyes feel helpless inside oh love need hide let love heart tired ghost pulls apart feels like lost love need hide let love heart tired let love heart tired let love heart tired whisper alright see white lies walls talk could say hide secrets forget mess waiting sidelines sidelines let love heart tired ghost pulls apart feels like lost love need hide let love heart tired let love heart tired let love heart tired tears eyes helpless inside need hide let love heart tired</code>                                                                             | <code>legends never die world callin hear screaming name legends never die become part every time bleed reaching greatness relentless survive never lose hope everything cold fighting near deep bones ride smoke fire fierce oh pick cause legends never die world calling hear screamin name legends never die become part every time bleed reaching greatness legends never die written eternity never see price costs scars collected lives everything lost pick hearts avenge defeat starts suffer harm touch dream oh pick cause legends never die world calling hear screamin name legends never die become part every time bleed reaching greatness legends never die world callin name begging fight pick pick cause legends never die world calling hear screamin name legends never die become part every time bleed reaching greatness legends never die oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh oh</code>                                                                                                | <code>0.0</code> |
+  | sentence_0                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | sentence_1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | label            |
+  |:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------|
+  | <code>hit like riptide yeah never noticed cause always kept disguise yeah lifted curtain let see inside yeah lies deceit ugly mess created something knew could never clean handle someday hit riptide way wanna say goodbye anger standby hit hit riptide yeah hey honest mistake go separate ways need dig gravestones push til alone fights taking tone oh worse stay cause changed personality close door behind hit riptide way wanna say goodbye anger standby hit hit riptide yeah already moved someone wrong hope one day see villain release hold one control riptide comes today one wash away hit riptide way wanna say goodbye anger standby hit hit riptide yeah</code>                                                                                                                                                                                                                                                                                                                                                                    | <code>sun goes stars come counts universe never glad came cast spell spell hit like sky fell fell decided look well well let go somewhere one else see turn lights take hand hand another drink drink spend little time time slipping away away us stay stay make make glad came sun goes stars come counts universe never glad came glad came cast spell spell hit like sky fell fell decided look well well let go somewhere one else see turn lights take hand hand another drink drink spend little time time slipping away away us stay stay make make glad came sun goes stars come counts universe never glad came glad came glad came glad came glad came glad came sun goes stars come counts universe never glad came glad came</code>                                                                                                                                                                                                                                                                                                         | <code>1.0</code> |
+  | <code>letra de donde vas ft raquel sofia going looking like looking looking like looking looking like nde vas yo te caigo de tr yo te caigo de tr yo te caigo de tr going looking like looking looking like looking looking like nde vas yo te caigo de tr yo te caigo de tr yo te caigo de tr se retrouve dans la pista ne inqui te pas es toujours la plus belle de misa une comme toi pas deux pas disa bouge tes sens une mani espanica girl je suis fou toxiqu par ta bisa said girl girl girl girl dirty girl toxiqu par ta bisa said girl girl said girly girl dirty girl love gotta let go worry baby cause heart know trust honey give love better give confianza mia dama por qu eres tan dif cil confianza mia dama amor know love real going looking like looking looking like looking looking like nde vas yo te caigo de tr yo te caigo de tr yo te caigo de tr going looking like looking looking like looking looking like nde vas yo te caigo de tr yo te caigo de tr yo te caigo de tr dirty girl dirty girl dirty girl dirt...</code> | <code>humanity auf wiedersehen time say goodbye party laughter dies angel cries humanity au revoir insanity sold soul feed vanity fantasies lies drop rain number name see believe end day needle hay signed sealed got deal humanity humanity goodbye goodbye way adios amigo price pay egotistic games played world made gone drop rain number name see believe end day needle hay signed sealed got deal humanity humanity goodbye goodbye run hide fire sky stay inside water gonna rise pull eyes staring end time nothing change us one save us drop rain number name see believe end day needle hay signed sealed got deal humanity humanity humanity goodbye goodbye goodbye goodbye time</code>                                                                                                                                                                                                                                                                                                                                                 | <code>0.0</code> |
+  | <code>stephen marley let em know time came party came dance know girl damn right man night going good fall games said said dumb shit got whole lot names whole lot numbers throw away cause think might love could mary jane spell know could tearing history got got got got options top one baby baby problem get love got got got got options top one baby baby problem get love around game around fame around money around names chico still things never change tip show friends show future keep change seen em come go seen em sell souls number one draft pick baby let pick roll always keep pedestal misery loves company baby sweat hoes got whole lot names whole lot numbers throw away cause think might love could mary jane spell know could tearing history got got got got options top one baby baby problem get love got got got got options top one baby baby problem get love looking perfect man looking perfect life take perfect pics want perfect dick nothing perfect girl thing perfect world broads try hard baby...</code> | <code>club best place find lover bar go friends table doin shots drinkin fast talk slow come start conversation trust give chance take hand stop put van man jukebox start dance singin like girl know want love love handmade somebody like well come follow lead may crazy mind say boy let talk much grab waist put body well come follow lead come come follow lead mm love shape push pull like magnet although heart fallin love body last night room bed sheets smell like every day discoverin somethin brand new well love body oh oh oh oh well love body oh oh oh oh well love body oh oh oh oh well love body every day discoverin somethin brand new love shape one week let story begin goin first date thrifty go eat fill bag fill plate talk hours hours sweet sour family doin okay leave get taxi kiss back seat tell driver make radio play singin like girl know want love love handmade somebody like well come follow lead may crazy mind say boy let talk much grab waist put body well come follow lead come come fol...</code> | <code>0.0</code> |
 * Loss: [<code>CosineSimilarityLoss</code>](https://sbert.net/docs/package_reference/sentence_transformer/losses.html#cosinesimilarityloss) with these parameters:
   ```json
   {
