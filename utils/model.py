@@ -1,13 +1,17 @@
 from clean_lyrics import clean_lyrics
 import pandas as pd
 from sentence_transformers import InputExample, losses, SentenceTransformer
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.cluster import KMeans
 from sklearn.metrics import silhouette_score
-from torch.utils.data import DataLoader
+from torch.utils.data import DataLoader, Dataset
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.decomposition import PCA
 import numpy as np
+import torch
+import torch.nn as nn
+import torch.optim as optim
+
 
 def remove_outliers(X, df):
 
@@ -77,28 +81,45 @@ def create_lyrics_embedding(df, model):
     df['lyrics_embedding'] = df['clean_lyrics'].apply(lambda x: model.encode(x))
     return df
 
-def recommend_by_lyrics(df):
+class AudioLyricsDataset(Dataset):
 
-    song_name = df.sample(1).iloc[0]['track_name']
-    print(f'Similar songs to {song_name}')
-    query_vec = df.loc[df['track_name'] == song_name, 'lyrics_embedding'].values[0]
-    lyrics_matrix = np.stack(df['lyrics_embedding'].values)
-    similarities = cosine_similarity([query_vec], lyrics_matrix)[0]
+    def __init__(self, audio_features, lyrics_embedding, cluster_labels):
 
-    df['similarities'] = similarities
-    recommendations = df.sort_values('similarities', ascending = False).head(6).iloc[1:][['track_name', 'track_artist', 'similarities']]
-    return recommendations
+        self.audio_features = torch.FloatTensor(audio_features)
+        self.lyrics_embedding = torch.FloatTensor(lyrics_embedding)
 
-def recommend_by_query(df, query, model):
+        encoder = OneHotEncoder(sparse_output=False)
+        cluster_onehot = encoder.fit_transform(cluster_labels.reshape(-1, 1))
+
+        self.audio_features = torch.cat([self.audio_features, torch.FloatTensor(cluster_onehot)], dim = 1)
     
-    print(query)
-    query_vec = model.encode(query)
-    lyrics_matrix = np.stack(df['lyrics_embedding'].values)
-    similarities = cosine_similarity([query_vec], lyrics_matrix)[0]
+    def __len__(self):
+        return len(self.audio_features)
+    
+    def __getitem__(self, idx):
+        return self.audio_features[idx], self.lyrics_embedding[idx]
+    
+class ConditionalGenerator(nn.module):
 
-    df['similarities'] = similarities
-    recommendations = df.sort_values('similarities', ascending = False).head(5)[['track_name', 'track_artist', 'similarities']]
-    return recommendations
+    def __init__(self, input_dim, output_dim, hidden_dims = [512, 256,  128]):
+
+        super().__init__()
+
+        layers = []
+        prev_dim = input_dim
+
+        for hidden_dim in hidden_dims:
+
+            layers.extend([nn.Linear(prev_dim, hidden_dim), nn.BatchNorm1d(hidden_dim), nn.ReLU(), nn.Dropout(0.3)])
+            prev_dim = hidden_dim
+
+        layers.append(nn.Linear(prev_dim, output_dim))
+
+        self.network = nn.Sequential(*layers)
+    
+    def forward_pass(self, x):
+
+        return  self.network(x)
 
 
 if __name__ == "__main__":
@@ -117,7 +138,7 @@ if __name__ == "__main__":
 
     model = SentenceTransformer('../models/finetuned_bert')
     df = create_lyrics_embedding(df, model)
-    #print(df.head())
+    print(df.dtypes)
 
     """
     s = 0
@@ -128,6 +149,3 @@ if __name__ == "__main__":
         print(similarity)
 
     """
-
-    recommendations = recommend_by_query(df, 'Hey! I want some rock songs', model)
-    print(recommendations)
