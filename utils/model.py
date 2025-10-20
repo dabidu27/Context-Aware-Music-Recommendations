@@ -90,7 +90,7 @@ class AudioLyricsDataset(Dataset):
         lyrics_embedding = np.stack(lyrics_embedding) 
         cluster_labels = np.array(cluster_labels).reshape(-1, 1)
 
-        encoder = OneHotEncoder(sparse=False)
+        encoder = OneHotEncoder(sparse_output=False)
         cluster_onehot = encoder.fit_transform(cluster_labels)
 
         combined_features = np.concatenate([audio_features, cluster_onehot], axis = 1)
@@ -124,13 +124,13 @@ class ConditionalGenerator(nn.Module):
     
     def forward(self, x):
 
-        return  self.network(x)
+        return self.network(x)
 
 def train_model(model, df, epochs = 100, lr = 0.001, device = 'cpu', patience = 10):
 
     model = model.to(device)
-    optimizer = optim.SGD(model.parameters(), lr = lr)
-    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode = 'min', factor=0.5, patience=5, verbose = True)
+    optimizer = optim.Adam(model.parameters(), lr = lr)
+    scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode = 'min', factor=0.5, patience=5)
 
     criterion = nn.MSELoss()
     cos_sim = nn.CosineSimilarity(dim = 1)
@@ -240,7 +240,7 @@ if __name__ == "__main__":
 
     model = SentenceTransformer('../models/finetuned_bert')
     df = create_lyrics_embedding(df, model)
-    print(df.dtypes)
+    #print(df.dtypes)
 
     """
     s = 0
@@ -251,3 +251,12 @@ if __name__ == "__main__":
         print(similarity)
 
     """
+    #train model
+
+    input_dim = 7 + df['label'].nunique()
+    output_dim = len(df['lyrics_embedding'].iloc[0])
+    model = ConditionalGenerator(input_dim=input_dim, output_dim=output_dim)
+    trained_model, history = train_model(model, df)
+
+    print("Final training loss:", history['train_loss'][-1])
+    print("Final validation loss:", history['val_loss'][-1])
