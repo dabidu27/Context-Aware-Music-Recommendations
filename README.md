@@ -1,5 +1,6 @@
-Conditional Neural Network for Lyrics Embedding
-This repository explores context-aware music recommendations with an emphasis on unsupervised learning (clustering) to discover latent audio groups, and a conditional neural generator that predicts lyrics embeddings from audio features + cluster labels.
+ # Conditional Neural Network for Lyrics Embedding
+
+This repository explores unsupervised learning (clustering) to discover latent audio groups, and a conditional neural generator that predicts lyrics embeddings from audio features + cluster labels.
 
 The project has three main parts:
 
